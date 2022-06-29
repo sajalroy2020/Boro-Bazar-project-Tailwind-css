@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/img/img-1.jpg">
+    <link rel="shortcut icon" href="" type="images/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css" integrity="sha512-Rcr1oG0XvqZI1yv1HIg9LgZVDEhf2AHjv+9AuD1JXWGLzlkoKDVvE925qySLcEywpMAYA/rkg296MkvqBF07Yw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>BoroBazar</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <style>
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .overlay {
+         transition: .4s ease;
+       }
+       .team1:hover .overlay {
+         height: 100%;
+         left: 0;
+       }
+    </style>
+</head>
+<body>
+
+    
+<!--  ====================== Header Section =============================  -->
+<header class="z-10 top-0 header-area  w-full bg-white shadow fixed">
+    <div class="container mx-auto px-4 z-20 py-2">
+       <nav class=" md:flex hidden items-center justify-between px-4">
+          <a href='index.html' class='flex items-center flex-shrink-0 mr-6'>
+          <img class="h-7" src="https://borobazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Flogo.svg&w=256&q=75" alt="title">
+          </a>
+          <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto">
+             <ul class="flex">
+                <li><a class='p-4 flex items-center text-black transition duration-400 hover:text-green-500' href='index.html'> Home </a></li>
+                <li class="dropdown relative inline-block">
+                    <button id="" class="dropbtn text-black px-5 pt-4 flex hover:text-green-400">Demos 
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 pt-1 pl-1 text-black" viewBox="0 0 20 20" fill="currentColor">
+                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                         </svg>
+                    </button>
+                    <ul class="dropdown-content absolute right-0 hidden pt-6" style="left:0;">
+                       <li class=" bg-white py-2 lg:absolute rounded-sm lg:shadow lg:w-44 transition duration-500 submenu">
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='modern.html'> Modern </a>
+                       </li>
+                    </ul>
+                 </li>
+                <li class="dropdown relative inline-block">
+                   <button id="" class="dropbtn text-black px-5 pt-4 flex hover:text-green-400">Categories 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 pt-1 pl-1 text-black" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                   </button>
+                   <ul class="dropdown-content absolute right-0 hidden pt-6" style="left:0;">
+                      <li class=" bg-white py-2 lg:absolute rounded-sm lg:shadow lg:w-44 transition duration-500 submenu">
+                         <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='fresh.html'> fresh-vegetables</a>
+                         <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='#!'> Healthy-Food </a>
+                      </li>
+                   </ul>
+                </li>
+                <li><a class='p-4 flex items-center text-black transition duration-400 hover:text-green-500' href='shop.html'> Shops </a></li>
+                <li class="dropdown relative inline-block">
+                    <button id="" class="dropbtn text-black px-5 pt-4 flex hover:text-green-400">pages 
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 pt-1 pl-1 text-black" viewBox="0 0 20 20" fill="currentColor">
+                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                         </svg>
+                    </button>
+                    <ul class="dropdown-content absolute right-0 hidden pt-6" style="left:0;">
+                       <li class=" bg-white py-2 lg:absolute lg:shadow lg:w-44 transition duration-500 submenu rounded-sm">
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='faq.html'> FAQ </a>
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='aboutus.html'> About Us </a>
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='privacy.html'> Privacy Policy </a>
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='terms.html'> Terms & conditions </a>
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='contact.html'>Contact Us</a>
+                       </li>
+                    </ul>
+                 </li>
+             </ul>
+          </div>
+          <div class="flex float-right">
+            <a class='p-4 flex items-center transition duration-500' href='#!'> 
+                <label class="block text-left" style="max-width: 400px">
+                    <select class="form-select block w-full mt-1 bg-gray-50">
+                      <option>English-EN</option>
+                      <option>Option 2</option>
+                    </select>
+                  </label>
+            </a>
+            <a class='p-4 flex items-center text-black transition duration-500' href='#!'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>Cart
+            </a>
+            <a class='p-4 flex items-center text-black transition duration-500' href='#!'> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg> Sign In
+            </a>
+          </div>
+       </nav>
+
+       <div  class="md:hidden mobile-menu flex relative">
+          <span id="main-btn">
+             <svg  xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-black cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+          </span>
+          <div class="flex pl-10">
+            <a class='p-2 flex items-center transition duration-500 text-xs' href='#!'> 
+                <label class="block text-left" style="max-width: 400px">
+                    <select class="form-select block w-full mt-1 bg-gray-50">
+                      <option>English-EN</option>
+                      <option>Option 2</option>
+                    </select>
+                  </label>
+            </a>
+            <a class='p-2 flex items-center text-black transition duration-500 text-xs' href='#!'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>Cart
+            </a>
+            <a class='p-2 flex items-center text-black transition duration-500 text-xs' href='#!'> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg> Sign In
+            </a>
+          </div>
+        <ul id="main-menu" class="bg-black p-3 hidden mt-12 w-full absolute">
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="index.html" class="text-sm pl-5">Home</a></li>
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="faq.html" class="text-sm pl-5">FAQ</a></li>
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="aboutus.html" class="text-sm pl-5">About Us</a></li>
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="privacy.html" class="text-sm pl-5">Privacy Policy</a></li>
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="terms.html" class="text-sm pl-5">Terms & conditions</a></li>
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="contact.html" class="text-sm pl-5">Contact us</a></li>
+        </ul>
+       </div>
+    </div>
+ </header>
+
+
+
+   <!--  ====================== left bar section =============================  -->
+   <div class="section mb-14 mt-10">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap mx-6">
+            <div class="w-full pt-10 flex flex-wrap">
+                <div class="md:w-3/12 w-full px-2">
+                    <p class="font-semibold hover:text-secondary-color text-lg py-5">Categories</p>
+                    <div class="border-2 overflow-y-auto" style="height: 700px;">
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="border-b-2 hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="hover:bg-gray-100 transition duration-400">
+                            <a href="#!">
+                                <span class="flex items-center"><img src="../src/img/fresh-vegetables.svg" class="p-2" alt="##">
+                                    <p class="text-black text-sm"> Fresh Vegetables </p>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-9/12 w-full">
+                    <p class="font-semibold hover:text-secondary-color text-lg py-5 px-2">2,683 Items Found</p>
+                    <div class="flex flex-wrap"> 
+                        <div class="md:w-3/12 w-full px-2 pt-5 md:pt-0">
+                            <div class="relative flex justify-center hover:shadow-md shadow-xl border-b border-gray-200 rounded">
+                             <a href="#!">
+                                 <div class="cursor-pointer pt-3">
+                                     <img src="../src/img/p-2.webp" alt="" class="transform hover:scale-95 motion-reduce:transform-none ease-out duration-700">     
+                                     <div class="float-left block py-6 px-4">
+                                         <a href="#!" class="font-semibold hover:text-secondary-color text-lg ">$2.64</a> 
+                                         <a href="#!" class="text-gray-700 text-sm px-2"><del>$2.64</del></a> 
+                                         <p class="text-gray-900 py-1 leading-7" style="font-size: 15px;">Fresh Green Leaf Lettuce</p>
+                                         <p class="text-gray-600 pt-2 leading-7" style="font-size: 15px;">1 each</p>
+                                     </div>               
+                                 </div>
+                                 <div class="text-2xl bg-green-500 w-11 font-semibold  h-11 rounded-full flex items-center justify-center absolute right-8 mt-36">
+                                   <div class=" text-center text-black">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                         <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                     </svg>
+                                   </div>
+                                 </div>
+                             </a>
+                            </div>
+                         </div>
+                         <div class="md:w-3/12 w-full px-2 pt-5 md:pt-0">
+                            <div class="relative flex justify-center hover:shadow-md shadow-xl border-b border-gray-200 rounded">
+                             <a href="#!">
+                                 <div class="cursor-pointer pt-3">
+                                     <img src="../src/img/p-2.webp" alt="" class="transform hover:scale-95 motion-reduce:transform-none ease-out duration-700">     
+                                     <div class="float-left block py-6 px-4">
+                                         <a href="#!" class="font-semibold hover:text-secondary-color text-lg ">$2.64</a> 
+                                         <a href="#!" class="text-gray-700 text-sm px-2"><del>$2.64</del></a> 
+                                         <p class="text-gray-900 py-1 leading-7" style="font-size: 15px;">Fresh Green Leaf Lettuce</p>
+                                         <p class="text-gray-600 pt-2 leading-7" style="font-size: 15px;">1 each</p>
+                                     </div>               
+                                 </div>
+                                 <div class="text-2xl bg-green-500 w-11 font-semibold  h-11 rounded-full flex items-center justify-center absolute right-8 mt-36">
+                                   <div class=" text-center text-black">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                         <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                     </svg>
+                                   </div>
+                                 </div>
+                             </a>
+                            </div>
+                         </div>
+                         <div class="md:w-3/12 w-full px-2 pt-5 md:pt-0">
+                            <div class="relative flex justify-center hover:shadow-md shadow-xl border-b border-gray-200 rounded">
+                             <a href="#!">
+                                 <div class="cursor-pointer pt-3">
+                                     <img src="../src/img/p-2.webp" alt="" class="transform hover:scale-95 motion-reduce:transform-none ease-out duration-700">     
+                                     <div class="float-left block py-6 px-4">
+                                         <a href="#!" class="font-semibold hover:text-secondary-color text-lg ">$2.64</a> 
+                                         <a href="#!" class="text-gray-700 text-sm px-2"><del>$2.64</del></a> 
+                                         <p class="text-gray-900 py-1 leading-7" style="font-size: 15px;">Fresh Green Leaf Lettuce</p>
+                                         <p class="text-gray-600 pt-2 leading-7" style="font-size: 15px;">1 each</p>
+                                     </div>               
+                                 </div>
+                                 <div class="text-2xl bg-green-500 w-11 font-semibold  h-11 rounded-full flex items-center justify-center absolute right-8 mt-36">
+                                   <div class=" text-center text-black">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                         <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                     </svg>
+                                   </div>
+                                 </div>
+                             </a>
+                            </div>
+                         </div>
+                         <div class="md:w-3/12 w-full px-2 pt-5 md:pt-0">
+                            <div class="relative flex justify-center hover:shadow-md shadow-xl border-b border-gray-200 rounded">
+                             <a href="#!">
+                                 <div class="cursor-pointer pt-3">
+                                     <img src="../src/img/p-2.webp" alt="" class="transform hover:scale-95 motion-reduce:transform-none ease-out duration-700">     
+                                     <div class="float-left block py-6 px-4">
+                                         <a href="#!" class="font-semibold hover:text-secondary-color text-lg ">$2.64</a> 
+                                         <a href="#!" class="text-gray-700 text-sm px-2"><del>$2.64</del></a> 
+                                         <p class="text-gray-900 py-1 leading-7" style="font-size: 15px;">Fresh Green Leaf Lettuce</p>
+                                         <p class="text-gray-600 pt-2 leading-7" style="font-size: 15px;">1 each</p>
+                                     </div>               
+                                 </div>
+                                 <div class="text-2xl bg-green-500 w-11 font-semibold  h-11 rounded-full flex items-center justify-center absolute right-8 mt-36">
+                                   <div class=" text-center text-black">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                         <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                     </svg>
+                                   </div>
+                                 </div>
+                             </a>
+                            </div>
+                         </div>
+
+                         <div class="md:w-3/12 w-full px-2 pt-5 md:pt-0">
+                            <div class="relative flex justify-center hover:shadow-md shadow-xl border-b border-gray-200 rounded">
+                             <a href="#!">
+                                 <div class="cursor-pointer pt-3">
+                                     <img src="../src/img/p-2.webp" alt="" class="transform hover:scale-95 motion-reduce:transform-none ease-out duration-700">     
+                                     <div class="float-left block py-6 px-4">
+                                         <a href="#!" class="font-semibold hover:text-secondary-color text-lg ">$2.64</a> 
+                                         <a href="#!" class="text-gray-700 text-sm px-2"><del>$2.64</del></a> 
+                                         <p class="text-gray-900 py-1 leading-7" style="font-size: 15px;">Fresh Green Leaf Lettuce</p>
+                                         <p class="text-gray-600 pt-2 leading-7" style="font-size: 15px;">1 each</p>
+                                     </div>               
+                                 </div>
+                                 <div class="text-2xl bg-green-500 w-11 font-semibold  h-11 rounded-full flex items-center justify-center absolute right-8 mt-36">
+                                   <div class=" text-center text-black">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                         <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                     </svg>
+                                   </div>
+                                 </div>
+                             </a>
+                            </div>
+                         </div>
+
+                         <div class="md:w-3/12 w-full px-2 pt-5 md:pt-0">
+                            <div class="relative flex justify-center hover:shadow-md shadow-xl border-b border-gray-200 rounded">
+                             <a href="#!">
+                                 <div class="cursor-pointer pt-3">
+                                     <img src="../src/img/p-2.webp" alt="" class="transform hover:scale-95 motion-reduce:transform-none ease-out duration-700">     
+                                     <div class="float-left block py-6 px-4">
+                                         <a href="#!" class="font-semibold hover:text-secondary-color text-lg ">$2.64</a> 
+                                         <a href="#!" class="text-gray-700 text-sm px-2"><del>$2.64</del></a> 
+                                         <p class="text-gray-900 py-1 leading-7" style="font-size: 15px;">Fresh Green Leaf Lettuce</p>
+                                         <p class="text-gray-600 pt-2 leading-7" style="font-size: 15px;">1 each</p>
+                                     </div>               
+                                 </div>
+                                 <div class="text-2xl bg-green-500 w-11 font-semibold  h-11 rounded-full flex items-center justify-center absolute right-8 mt-36">
+                                   <div class=" text-center text-black">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                         <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                     </svg>
+                                   </div>
+                                 </div>
+                             </a>
+                            </div>
+                         </div>
+
+                         <div class="md:w-3/12 w-full px-2 pt-5 md:pt-0">
+                            <div class="relative flex justify-center hover:shadow-md shadow-xl border-b border-gray-200 rounded">
+                             <a href="#!">
+                                 <div class="cursor-pointer pt-3">
+                                     <img src="../src/img/p-2.webp" alt="" class="transform hover:scale-95 motion-reduce:transform-none ease-out duration-700">     
+                                     <div class="float-left block py-6 px-4">
+                                         <a href="#!" class="font-semibold hover:text-secondary-color text-lg ">$2.64</a> 
+                                         <a href="#!" class="text-gray-700 text-sm px-2"><del>$2.64</del></a> 
+                                         <p class="text-gray-900 py-1 leading-7" style="font-size: 15px;">Fresh Green Leaf Lettuce</p>
+                                         <p class="text-gray-600 pt-2 leading-7" style="font-size: 15px;">1 each</p>
+                                     </div>               
+                                 </div>
+                                 <div class="text-2xl bg-green-500 w-11 font-semibold  h-11 rounded-full flex items-center justify-center absolute right-8 mt-36">
+                                   <div class=" text-center text-black">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                         <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                     </svg>
+                                   </div>
+                                 </div>
+                             </a>
+                            </div>
+                         </div>
+
+                         <div class="md:w-3/12 w-full px-2 pt-5 md:pt-0">
+                            <div class="relative flex justify-center hover:shadow-md shadow-xl border-b border-gray-200 rounded">
+                             <a href="#!">
+                                 <div class="cursor-pointer pt-3">
+                                     <img src="../src/img/p-2.webp" alt="" class="transform hover:scale-95 motion-reduce:transform-none ease-out duration-700">     
+                                     <div class="float-left block py-6 px-4">
+                                         <a href="#!" class="font-semibold hover:text-secondary-color text-lg ">$2.64</a> 
+                                         <a href="#!" class="text-gray-700 text-sm px-2"><del>$2.64</del></a> 
+                                         <p class="text-gray-900 py-1 leading-7" style="font-size: 15px;">Fresh Green Leaf Lettuce</p>
+                                         <p class="text-gray-600 pt-2 leading-7" style="font-size: 15px;">1 each</p>
+                                     </div>               
+                                 </div>
+                                 <div class="text-2xl bg-green-500 w-11 font-semibold  h-11 rounded-full flex items-center justify-center absolute right-8 mt-36">
+                                   <div class=" text-center text-black">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                         <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                     </svg>
+                                   </div>
+                                 </div>
+                             </a>
+                            </div>
+                         </div>
+
+                         <div class="md:w-3/12 w-full px-2 pt-5 md:pt-0">
+                            <div class="relative flex justify-center hover:shadow-md shadow-xl border-b border-gray-200 rounded">
+                             <a href="#!">
+                                 <div class="cursor-pointer pt-3">
+                                     <img src="../src/img/p-2.webp" alt="" class="transform hover:scale-95 motion-reduce:transform-none ease-out duration-700">     
+                                     <div class="float-left block py-6 px-4">
+                                         <a href="#!" class="font-semibold hover:text-secondary-color text-lg ">$2.64</a> 
+                                         <a href="#!" class="text-gray-700 text-sm px-2"><del>$2.64</del></a> 
+                                         <p class="text-gray-900 py-1 leading-7" style="font-size: 15px;">Fresh Green Leaf Lettuce</p>
+                                         <p class="text-gray-600 pt-2 leading-7" style="font-size: 15px;">1 each</p>
+                                     </div>               
+                                 </div>
+                                 <div class="text-2xl bg-green-500 w-11 font-semibold  h-11 rounded-full flex items-center justify-center absolute right-8 mt-36">
+                                   <div class=" text-center text-black">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                         <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                     </svg>
+                                   </div>
+                                 </div>
+                             </a>
+                            </div>
+                         </div>
+                         <div class="md:w-3/12 w-full px-2 pt-5 md:pt-0">
+                            <div class="relative flex justify-center hover:shadow-md shadow-xl border-b border-gray-200 rounded">
+                             <a href="#!">
+                                 <div class="cursor-pointer pt-3">
+                                     <img src="../src/img/p-2.webp" alt="" class="transform hover:scale-95 motion-reduce:transform-none ease-out duration-700">     
+                                     <div class="float-left block py-6 px-4">
+                                         <a href="#!" class="font-semibold hover:text-secondary-color text-lg ">$2.64</a> 
+                                         <a href="#!" class="text-gray-700 text-sm px-2"><del>$2.64</del></a> 
+                                         <p class="text-gray-900 py-1 leading-7" style="font-size: 15px;">Fresh Green Leaf Lettuce</p>
+                                         <p class="text-gray-600 pt-2 leading-7" style="font-size: 15px;">1 each</p>
+                                     </div>               
+                                 </div>
+                                 <div class="text-2xl bg-green-500 w-11 font-semibold  h-11 rounded-full flex items-center justify-center absolute right-8 mt-36">
+                                   <div class=" text-center text-black">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                         <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                     </svg>
+                                   </div>
+                                 </div>
+                             </a>
+                            </div>
+                         </div>
+
+                         <div class="md:w-3/12 w-full px-2 pt-5 md:pt-0">
+                            <div class="relative flex justify-center hover:shadow-md shadow-xl border-b border-gray-200 rounded">
+                             <a href="#!">
+                                 <div class="cursor-pointer pt-3">
+                                     <img src="../src/img/p-2.webp" alt="" class="transform hover:scale-95 motion-reduce:transform-none ease-out duration-700">     
+                                     <div class="float-left block py-6 px-4">
+                                         <a href="#!" class="font-semibold hover:text-secondary-color text-lg ">$2.64</a> 
+                                         <a href="#!" class="text-gray-700 text-sm px-2"><del>$2.64</del></a> 
+                                         <p class="text-gray-900 py-1 leading-7" style="font-size: 15px;">Fresh Green Leaf Lettuce</p>
+                                         <p class="text-gray-600 pt-2 leading-7" style="font-size: 15px;">1 each</p>
+                                     </div>               
+                                 </div>
+                                 <div class="text-2xl bg-green-500 w-11 font-semibold  h-11 rounded-full flex items-center justify-center absolute right-8 mt-36">
+                                   <div class=" text-center text-black">
+                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20" fill="currentColor">
+                                         <path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd" />
+                                     </svg>
+                                   </div>
+                                 </div>
+                             </a>
+                            </div>
+                         </div>
+                         <div class="w-full">
+                            <div class="text-center pt-7">
+                                <button class="shadow bg-green-600 hover:bg-green-800 focus:shadow-outline focus:outline-none text-white font-bold py-4 px-5 rounded-sm" type="button">
+                                  Load More
+                                </button>
+                          </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ 
+   <!--  ======================payment button Section =============================  -->
+   <div class="section mt-8">
+    <div class="container mx-auto">
+        <div class="flex flex-wrap mx-10 bg-gray-200 items-center">
+            <div class="md:w-6/12 w-full px-10 items-center">
+                <span class="md:text-4xl text-2xl font-semibold leading-10">Make your online shop easier with our mobile app</span>
+                <p class="text-black py-7 text-md leading-8">BoroBazar makes online grocery shopping fast and easy. Get groceries delivered and order the best of seasonal farm fresh food.</p>
+                <span class="flex md:pb-0 pb-5">
+                    <a href="#!" class="pr-3"><img src="../src/img/play-store.webp" class="rounded" alt="##" ></a>
+                    <a href="#!"><img src="../src/img/app-store.webp" class="rounded" alt=""></a>
+                </span>     
+            </div>
+            <div class="md:w-6/12 w-full px-4">
+                <div style="background-image: url(../src/img/app-pic.webp); background-repeat: no-repeat; background-size: 100% 100%; height: 400px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+ <!--  ====================== Footer Section-1 =============================  -->
+    <footer>
+        <div class="container mx-auto px-4 py-14">
+            <div class="flex flex-wrap">
+                <div class="md:w-3/12 w-full px-4">
+                    <img src="https://borobazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Flogo.svg&w=256&q=75" class="h-7" alt="##">
+                    <div class="">
+                        <p class="text-gray-500 py-5 leading-7" style="font-size: 15px;">We offers high-quality foods and the best delivery service, and the food market you can blindly trust</p>
+                        <a href="#!"><i class="fa fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="md:w-2/12 w-full px-4">
+                    <p class="text-black text-base font-semibold pt-1">About Us</p>
+                    <p class="text-gray-500 pt-5 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">About us</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Contact us</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">About team</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Customer Support</a></p>
+                </div>
+                <div class="md:w-2/12 w-full px-4">
+                    <p class="text-black text-base font-semibold pt-1">Our Information</p>
+                    <p class="text-gray-500 pt-5 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Site Map</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Privacy policy update</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Terms & conditions</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Return Policy</a></p>
+                </div>
+                <div class="md:w-2/12 w-full px-4">
+                    <p class="text-black text-base font-semibold pt-1">Community</p>
+                    <p class="text-gray-500 pt-5 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Announcements</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Answer center</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Discussion boards</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Giving works</a></p>
+                </div>
+                <div class="md:w-3/12 w-full px-4">
+                    <p class="text-black text-base font-semibold pt-1">Subscribe Now</p>
+                    <div class="">
+                        <p class="text-gray-500 py-5 leading-7" style="font-size: 15px;">Subscribe your email for newsletter and featured news based on your interest</p>
+                        <input class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-green-500" id="grid-last-name" type="text" placeholder="Write your email here" style="font-size: 15px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-7">
+            <hr>
+           <div class="flex justify-between gap-23">
+              <div class="py-5 md:my-0">
+                 <span class="text-sm text-gray-500 pt-5 leading-7 hover:text-gray-900 " style="font-size: 15px;"> © Copyright 2021 Sajal Roy, Inc.  All rights reserved</span>
+              </div>
+              <div class="md:my-0 flex items-center ">
+                 <div class="flex gap-6 items-center float-right">
+                    <a href="#!"><img src="../src/img/index.png" alt="##" class="h-9 w-10"></a>
+                    <a href="#!"><img src="../src/img/index2.png" alt="##" class="h-5 w-10"></a>
+                    <a href="#!"><img src="../src/img/index3.png" alt="##" class="h-7 w-10"></a>
+                    <a href="#!"><img src="../src/img/index4.png" alt="##" class="h-5 w-10"></a>
+                    <a href="#!"><img src="../src/img/index5.png" alt="##" class="h-5 w-10"></a>
+                 </div>
+              </div>
+           </div>
+        </div>
+    </footer>

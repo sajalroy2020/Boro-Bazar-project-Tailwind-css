@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../src/img/img-1.jpg">
+    <link rel="shortcut icon" href="" type="images/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/fontawesome.min.css"/>
+    <title>BoroBazar</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <style>
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .overlay {
+         transition: .4s ease;
+       }
+       .team1:hover .overlay {
+         height: 100%;
+         left: 0;
+       }
+    </style>
+</head>
+<body>
+
+    
+<!--  ====================== Header Section =============================  -->
+<header class="z-10 top-0 header-area  w-full bg-white shadow fixed">
+    <div class="container mx-auto px-4 z-20 py-2">
+       <nav class=" md:flex hidden items-center justify-between px-4">
+          <a href='index.html' class='flex items-center flex-shrink-0 mr-6'>
+          <img class="h-7" src="https://borobazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Flogo.svg&w=256&q=75" alt="title">
+          </a>
+          <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto">
+             <ul class="flex">
+                <li><a class='p-4 flex items-center text-black transition duration-400 hover:text-green-500' href='index.html'> Home </a></li>
+                <li class="dropdown relative inline-block">
+                    <button id="" class="dropbtn text-black px-5 pt-4 flex hover:text-green-400">Demos 
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 pt-1 pl-1 text-black" viewBox="0 0 20 20" fill="currentColor">
+                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                         </svg>
+                    </button>
+                    <ul class="dropdown-content absolute right-0 hidden pt-6" style="left:0;">
+                       <li class=" bg-white py-2 lg:absolute rounded-sm lg:shadow lg:w-44 transition duration-500 submenu">
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='modern.html'> Modern </a>
+                       </li>
+                    </ul>
+                 </li>
+                <li class="dropdown relative inline-block">
+                   <button id="" class="dropbtn text-black px-5 pt-4 flex hover:text-green-400">Categories 
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 pt-1 pl-1 text-black" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                   </button>
+                   <ul class="dropdown-content absolute right-0 hidden pt-6" style="left:0;">
+                    <li class=" bg-white py-2 lg:absolute rounded-sm lg:shadow lg:w-44 transition duration-500 submenu">
+                        <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='fresh.html'> fresh-vegetables</a>
+                        <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='#!'> Healthy-Food </a>
+                     </li>
+                   </ul>
+                </li>
+                <li><a class='p-4 flex items-center text-black transition duration-400 hover:text-green-500' href='shop.html'> Shops </a></li>
+                <li class="dropdown relative inline-block">
+                    <button id="" class="dropbtn text-black px-5 pt-4 flex hover:text-green-400">pages 
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 pt-1 pl-1 text-black" viewBox="0 0 20 20" fill="currentColor">
+                             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                         </svg>
+                    </button>
+                    <ul class="dropdown-content absolute right-0 hidden pt-6" style="left:0;">
+                       <li class=" bg-white py-2 lg:absolute lg:shadow lg:w-44 transition duration-500 submenu rounded-sm">
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='faq.html'> FAQ </a>
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='aboutus.html'> About Us </a>
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='privacy.html'> Privacy Policy </a>
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='terms.html'> Terms & conditions </a>
+                          <a class='hover:bg-gray-100 py-2 px-4 flex items-center hover:text-green-500 transition duration-400' href='contact.html'>Contact Us</a>
+                       </li>
+                    </ul>
+                 </li>
+             </ul>
+          </div>
+          <div class="flex float-right">
+            <a class='p-4 flex items-center transition duration-500' href='#!'> 
+                <label class="block text-left" style="max-width: 400px">
+                    <select class="form-select block w-full mt-1 bg-gray-50">
+                      <option>English-EN</option>
+                      <option>Option 2</option>
+                    </select>
+                  </label>
+            </a>
+            <a class='p-4 flex items-center text-black transition duration-500' href='#!'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>Cart
+            </a>
+            <a class='p-4 flex items-center text-black transition duration-500' href='#!'> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg> Sign In
+            </a>
+          </div>
+       </nav>
+
+       <div  class="md:hidden mobile-menu flex relative">
+          <span id="main-btn">
+             <svg  xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-black cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+          </span>
+          <div class="flex pl-10">
+            <a class='p-2 flex items-center transition duration-500 text-xs' href='#!'> 
+                <label class="block text-left" style="max-width: 400px">
+                    <select class="form-select block w-full mt-1 bg-gray-50">
+                      <option>English-EN</option>
+                      <option>Option 2</option>
+                    </select>
+                  </label>
+            </a>
+            <a class='p-2 flex items-center text-black transition duration-500 text-xs' href='#!'>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>Cart
+            </a>
+            <a class='p-2 flex items-center text-black transition duration-500 text-xs' href='#!'> 
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg> Sign In
+            </a>
+          </div>
+        <ul id="main-menu" class="bg-black p-3 hidden mt-12 w-full absolute">
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="index.html" class="text-sm pl-5">Home</a></li>
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="faq.html" class="text-sm pl-5">FAQ</a></li>
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="aboutus.html" class="text-sm pl-5">About Us</a></li>
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="privacy.html" class="text-sm pl-5">Privacy Policy</a></li>
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="terms.html" class="text-sm pl-5">Terms & conditions</a></li>
+           <li class="py-3 hover:bg-gray-100 rounded hover:text-gray-800 transition duration-500 font-semibold text-white"><a href="contact.html" class="text-sm pl-5">Contact us</a></li>
+        </ul>
+       </div>
+    </div>
+ </header>
+
+
+  
+ 
+  <!--  ====================== banner-3 Section =============================  -->
+    <div class="section my-14">
+        <div class="flex flex-wrap">
+            <img src="../src/img/about-us.png" alt="##">
+        </div>
+    </div>
+ 
+
+    <!--  ====================== About text Section =============================  -->
+    <div class="section mt-10">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap mx-8">
+                <div class="w-full space-y-2 pb-7 px-4">
+                    <span class="text-2xl font-semibold">About us</span>
+                    <p class="text-gray-500 leading-8" style="font-size: 15px;">We may automatically track certain information about you based upon your behavior on the website. We use this information to do internal research on our users’ demographics, interests, and behavior to better understand, protect and serve our users. This information is compiled and analyzed on an aggregated basis. This information may include the URL that you just came from (whether this URL is on the website or not), which URL you next go to (whether this URL is on the website or not), your computer browser information, your IP address, and other information associated with your interaction with the website. <span class="font-bold">We may also share your Mobile IP/Device IP with third party(ies) and to the best of our knowledge, be-life and representations given to us by these third party(ies) this information is not stored.</span> </p>
+                    <p class="text-gray-500 leading-8 py-2" style="font-size: 15px;">Our Privacy Policy is incorporated into the Terms and Conditions of Use of the website/app, and is subject to change from time to time without notice. It is strongly recommended that you periodically review our Privacy Policy as posted on the App/Web.</p>
+                    <p class="text-gray-500 leading-8 py-2" style="font-size: 15px;">Should you have any clarifications regarding this Privacy Policy, please do not hesitate to contact us at <a href="#!" class="hover:text-gray-500 text-green-500"> info@borobazar.com .</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+     <!--  ====================== About img Section =============================  -->
+     <div class="section mt-10">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap mx-8">
+                <div class="md:w-6/12 w-full space-y-2 pb-7 px-2">
+                    <div class="">
+                        <img src="../src/img/14.webp" alt="##">
+                    </div>
+                </div>
+                <div class="md:w-6/12 w-full space-y-2 pb-7 px-2">
+                    <div class="">
+                        <img src="../src/img/13.webp" alt="##">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <!--  ====================== About text-2 Section =============================  -->
+        <div class="section mt-10">
+            <div class="container mx-auto">
+                <div class="flex flex-wrap mx-8">
+                    <div class="w-full space-y-2 pb-7 px-4">
+                        <p class="text-gray-500 leading-8" style="font-size: 15px;"> To protect against the loss, misuse and alteration of the information under its control, the Company has in place appropriate physical, electronic and managerial procedures. For example, the Company servers are accessible only to authorized personnel and your information is shared with employees and authorized personnel on a need to know basis to complete the transaction and to provide the services requested by you. Although the Company endeavour to safeguard the confidentiality of your personally identifiable information, transmissions made by means of the Internet cannot be made absolutely secure. By using the website, you agree that the Company will have no liability for disclosure of your information due to errors in transmission and/or unauthorized acts of third parties. </p>
+                        <p class="text-gray-500 leading-8 py-2" style="font-size: 15px;">Please note that the Company will not ask you to share any sensitive data or information via email or telephone. If you receive any such request by email or telephone, please do not respond/divulge any sensitive data or information and forward the information relating to the same to<a href="#!" class="hover:text-gray-500 text-green-500"> info@borobazar.com .</a>  for necessary action.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--  ====================== About img-2 Section =============================  -->
+     <div class="section mt-10">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap mx-8">
+                <div class="md:w-4/12 w-full space-y-2 pb-7 px-2">
+                    <div class="">
+                        <img src="../src/img/17.webp" alt="##">
+                    </div>
+                </div>
+                <div class="md:w-4/12 w-full space-y-2 pb-7 px-2">
+                    <div class="">
+                        <img src="../src/img/18.webp" alt="##">
+                    </div>
+                </div>
+                <div class="md:w-4/12 w-full space-y-2 pb-7 px-2">
+                    <div class="">
+                        <img src="../src/img/19.webp" alt="##">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  ====================== About text-3 Section =============================  -->
+    <div class="section mt-10">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap mx-8">
+                <div class="w-full space-y-2 pb-7 px-4">
+                    <p class="text-gray-500 leading-8" style="font-size: 15px;"> Built on a proprietary technology stack, the Grocers platform serves as a convergence of consumers looking for everyday essentials, partner stores who serve their needs efficiently, and manufacturers looking for a channel to reach a nation of consumers. While our technology caters to the burgeoning population of urban India, it is ready and poised to serve the next 100+ million Indians who are yet to start shopping online. </p>
+                    <p class="text-gray-500 leading-8 py-2" style="font-size: 15px;"> We believe the ecosystem we power can transform the lives of a billion Indians significantly over the coming decade. They will have access to everyday essentials like groceries at the best value, be able to discover products that improve their health and wellbeing, and spend more meaningful time with their families – with the assurance that their essential needs are being looked after by us. On the other side of this virtuous cycle are the millions of local businesses catering to a nation’s needs, helping create more opportunities for employment, growth, and above all, a better life. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <!--  ====================== About img Section =============================  -->
+     <div class="section mt-10">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap mx-8">
+                <div class="w-full space-y-2 pb-7 px-2">
+                    <div class="">
+                        <img src="../src/img/66.webp" alt="##">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  ====================== About text-4 Section =============================  -->
+    <div class="section mt-10">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap mx-8">
+                <div class="w-full space-y-2 pb-7 px-4">
+                    <span class="text-2xl font-semibold">Be safe, be secure !!</span>
+                    <p class="text-gray-500 leading-8" style="font-size: 15px;">BoroBazar is leading the charge in transforming India’s vast, unorganized grocery landscape through cutting-edge technology and innovation. We believe every Indian deserves the opportunity to continually improve their life – a process that often begins at home. As part of our mission of helping consumers make healthier, better choices when buying everyday products, we make a wide range of high-quality grocery and household products accessible, affordable, and available right at their doorsteps.</p>
+                    <p class="text-lg font-semibold">For media enquiries please contact us at: <a href="#!" class="hover:text-gray-500 text-green-500"> info@borobazar.com .</a> </p>
+                    <p class="text-gray-500 leading-8" style="font-size: 15px;"></p>
+                    <p class="text-gray-500 leading-8 py-2" style="font-size: 15px;">For all other inquiries, visit our <a href="#!" class="hover:text-gray-500 text-green-500"> Contact Us</a> page.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+     <!--  ======================payment button Section =============================  -->
+     <div class="section mt-8">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap mx-10 bg-gray-200 items-center">
+                <div class="md:w-6/12 w-full px-10 items-center">
+                    <span class="md:text-4xl text-2xl font-semibold leading-10">Make your online shop easier with our mobile app</span>
+                    <p class="text-black py-7 text-md leading-8">BoroBazar makes online grocery shopping fast and easy. Get groceries delivered and order the best of seasonal farm fresh food.</p>
+                    <span class="flex md:pb-0 pb-5">
+                        <a href="#!" class="pr-3"><img src="../src/img/play-store.webp" class="rounded" alt="##" ></a>
+                        <a href="#!"><img src="../src/img/app-store.webp" class="rounded" alt=""></a>
+                    </span>     
+                </div>
+                <div class="md:w-6/12 w-full px-4">
+                    <div style="background-image: url(../src/img/app-pic.webp); background-repeat: no-repeat; background-size: 100% 100%; height: 400px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+ <!--  ====================== Footer Section-1 =============================  -->
+    <footer>
+        <div class="container mx-auto px-4 py-14">
+            <div class="flex flex-wrap">
+                <div class="md:w-3/12 w-full px-4">
+                    <img src="https://borobazar.vercel.app/_next/image?url=%2Fassets%2Fimages%2Flogo.svg&w=256&q=75" class="h-7" alt="##">
+                    <div class="">
+                        <p class="text-gray-500 py-5 leading-7" style="font-size: 15px;">We offers high-quality foods and the best delivery service, and the food market you can blindly trust</p>
+                        <a href="#!"><i class="fa fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="md:w-2/12 w-full px-4">
+                    <p class="text-black text-base font-semibold pt-1">About Us</p>
+                    <p class="text-gray-500 pt-5 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">About us</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Contact us</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">About team</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Customer Support</a></p>
+                </div>
+                <div class="md:w-2/12 w-full px-4">
+                    <p class="text-black text-base font-semibold pt-1">Our Information</p>
+                    <p class="text-gray-500 pt-5 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Site Map</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Privacy policy update</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Terms & conditions</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Return Policy</a></p>
+                </div>
+                <div class="md:w-2/12 w-full px-4">
+                    <p class="text-black text-base font-semibold pt-1">Community</p>
+                    <p class="text-gray-500 pt-5 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Announcements</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Answer center</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Discussion boards</a></p>
+                    <p class="text-gray-500 py-1 leading-7 hover:text-gray-900 transition duration-400" style="font-size: 15px;"><a href="#">Giving works</a></p>
+                </div>
+                <div class="md:w-3/12 w-full px-4">
+                    <p class="text-black text-base font-semibold pt-1">Subscribe Now</p>
+                    <div class="">
+                        <p class="text-gray-500 py-5 leading-7" style="font-size: 15px;">Subscribe your email for newsletter and featured news based on your interest</p>
+                        <input class="appearance-none block w-full text-gray-700 border border-gray-200 rounded py-2 px-4 leading-tight focus:outline-none focus:bg-white focus:border-green-500" id="grid-last-name" type="text" placeholder="Write your email here" style="font-size: 15px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-7">
+            <hr>
+           <div class="flex justify-between gap-23">
+              <div class="py-5 md:my-0">
+                 <span class="text-sm text-gray-500 pt-5 leading-7 hover:text-gray-900 " style="font-size: 15px;"> © Copyright 2021 Sajal Roy, Inc.  All rights reserved</span>
+              </div>
+              <div class="md:my-0 flex items-center ">
+                 <div class="flex gap-6 items-center float-right">
+                    <a href="#!"><img src="../src/img/index.png" alt="##" class="h-9 w-10"></a>
+                    <a href="#!"><img src="../src/img/index2.png" alt="##" class="h-5 w-10"></a>
+                    <a href="#!"><img src="../src/img/index3.png" alt="##" class="h-7 w-10"></a>
+                    <a href="#!"><img src="../src/img/index4.png" alt="##" class="h-5 w-10"></a>
+                    <a href="#!"><img src="../src/img/index5.png" alt="##" class="h-5 w-10"></a>
+                 </div>
+              </div>
+           </div>
+        </div>
+    </footer>
+
+        
+
+
+
+
+
+
+
+
+
+ <script>
+    let mainMenu = document.getElementById('main-menu');
+    let mainBtn = document.getElementById('main-btn');
+
+    mainBtn.addEventListener('click', function() {
+       mainMenu.classList.toggle('hidden');
+    });
+ </script>
+   
+
+</body>
+</html>
